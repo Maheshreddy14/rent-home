@@ -6,8 +6,10 @@
     <title>Rent home</title>
 </head>
 <body>
-    <form method="get" action="/listings/new"></form>
     <h3>All listings</h3>
+    <form method="get" action="/listings/new">
+        <button>add new listings</button>
+    </form>
     <ul>
         <% for(let listing of allListings){ %>
             <li><a href="/listings/<%= listing._id %>"><%= listing.title %></a></li>
